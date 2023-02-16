@@ -1,3 +1,3 @@
 # HTML-Assignment
-This repository consist of HTML Assignments.
-First is Assignment1 and Second is Assignment2
+This repository consist of HTML/CSS Assignments.
+index.html file is Assignment1 code and All the images used is also added in the repository.
