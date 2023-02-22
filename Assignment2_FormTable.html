@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registeration form</title>
+        <style>
+            body {
+	        margin: 0;
+	        padding: 0;
+            }
+
+           .container {
+	       padding: 20px;
+	       margin: auto;
+	       margin-top: 20px;
+	       line-height: 30px;
+	       width: 500px;
+          }
+
+          .title {
+	      text-align: center;
+          }
+          .container span {
+	      margin-top: 10px;
+	      padding-left: 40px;
+	      display: inline-block;
+	      width: 30%;
+          vertical-align: top;
+        }
+
+        .container input {
+	    min-height: 25px;
+	    display: inline-block;
+	    width: 50%;
+        }
+
+        #gender input {
+	    min-height: inherit;
+        width: auto;
+        }
+
+       .container textarea {
+	   display: inline-block;
+	   margin-top: 10px;
+	   width: 50%;
+       }
+       #music,#sports,#reading,#hobby{
+       min-height: inherit;
+       width: auto;
+       }
+       #sports,#reading,#hobby{
+       margin-left: 200px;
+       }
+       #submit,
+       #reset {
+	    display: inline-block;
+	    width: auto;
+	    margin-top: 10px;
+	    margin-left: 40%;
+        border:grey;
+        border-style: outset;
+        }
+
+        #reset {
+	    margin-left: 10%;
+        }
+        .table_border{
+        border: 1px solid red;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+    </style>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h4 class="title"> Student Registration Form</h2>
+         <form>
+            <div id="name"> <span>Name:</span>
+              <input type="text" required> </div>
+            <div id="number"> <span>Phone No:</span>
+              <input type="tel" pattern="[0-9]{10}" required> </div>
+            <div id="dob"> <span>Date of Birth:</span>
+              <input type="date" required> </div>
+            <div id="address"> <span>Address:</span>
+                <textarea rows="5" required></textarea>
+            </div>       
+            <div id="gender"> <span>Gender:</span>
+              <input type="radio" name="gender">Male
+              <input type="radio" name="gender">Female
+            </div>
+            <div id="city"> <span>City:</span>
+                <select name="city" id="city" form="registerationForm" required>
+                    <option value="select city">Select City</option>
+                    <option value="ambala">Ambala</option>
+                    <option value="bombay">Bombay</option>
+                    <option value="chandigarh">Chandigarh</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="gurgaon">Gurgaon</option>
+                    <option value="hisar">Hisar</option>
+                    <option value="noida">Noida</option>
+                    <option value="bangalore">Bangalore</option>
+                </select>
+            </div>
+            <div id="hobbies"><span>Hobbies:</span>
+                <input type="checkbox" id="music" name="music" value="Music">
+                <label for="music">Music</label><br>
+                <input type="checkbox" id="sports" name="sports" value="sports">
+                <label for="sports">Sports</label><br>
+                <input type="checkbox" id="reading" name="reading" value="reading">
+                <label for="reading">Reading</label><br>
+                <input type="checkbox" id="hobby" name="hobby" value="hobby">
+                <label for="sports">Hobby</label><br>
+                <input type="checkbox" id="hobby" name="hobby" value="hobby">
+                <label for="sports">Hobby</label><br>
+            </div>
+            
+            <input type="button" id="submit" value="submit">
+            <input type="button" id="reset" value="reset">
+         </form>
+
+         
+            <div class="container">
+                <h4 class="title"> Student Record</h4>
+                <table class="table_border">
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Name.</th>
+                        <th>Phone No.</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th>Interests</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Akash</td>
+                        <td>123-4-567</td>
+                        <td>Male</td>
+                        <td>12/12/1996</td>
+                        <td>Music<br>Dance<br>Cooking</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Akash</td>
+                        <td>123-2-567</td>
+                        <td>Male</td>
+                        <td>12/12/1996</td>
+                        <td>Dance<br>Travel</td>
+                    </tr>
+                </table>
+
+            </div>
+            
+        </div>
+
+    </body>
+</html>
